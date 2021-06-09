@@ -1,0 +1,43 @@
+.comment{
+    padding-block: 40px;
+    text-align: center;
+}
+
+.comment h1 {
+    margin: 0px;
+}
+
+.comment h1 span:nth-of-type(1){
+    font: var(--headline5);
+    font-weight: 400;
+    display: block;
+    padding-block-end: 24px;
+    padding-block-start:0px;
+}
+
+.comment h1 span:nth-of-type(2){
+    font:var(--headline5);
+    font-weight: 700;
+    padding-block-end: 24px;
+}
+
+.comment img{
+    inline-size: 60px;
+    block-size: 60px;
+    padding: 16.67px;
+}
+
+
+/*Responsive design de sección de comentarios*/
+
+@media screen and (min-width: 900px){
+    .comment{
+        padding-inline: 116px;
+        padding-block: 200px;
+    }
+
+    .comment h1 span:nth-of-type(1){
+        font: var(--body3);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
