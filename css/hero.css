@@ -47,9 +47,16 @@
     }
 }
 
+@media screen and (min-width: 500px){
+    .hero-image img{
+        inline-size: 465px;
+        block-size: 390px;
+    }
+}
+
 @media screen and (min-width: 1024px){
     .hero-image img{
-        inline-size: 565px;
-        block-size: 490px;
+        inline-size: 516px;
+        block-size: 452px;
     }
 }
