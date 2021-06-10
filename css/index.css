@@ -5,6 +5,7 @@
 @import "./wrapper.css";
 @import "./menu.css";
 @import "./comment.css";
+@import "./card.css";
 
 /*Aquí lo que hacemos es definir las variables de nuestros estilos principales
 del proyecto, definimos entonces las fuentes que se usarán, con sus distintas
@@ -17,6 +18,7 @@ propiedades y los colores de nuestros elementos */
     --headline3: bold 48px/77px var(--fontBase); 
     --headline4: bold 34px/55px var(--fontBase); 
     --headline5: bold 24px/38px var(--fontBase); 
+    --headline6: 12px/20px var(--fontBase);
     --body1: 16px/25px var(--fontBase);
     --body2: 14px/22px var(--fontBase);
     --body3: 30px/55px var(--fontTestimony);
