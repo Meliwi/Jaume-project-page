@@ -11,7 +11,7 @@
     background-image: linear-gradient(to right, rgba(255,255,255,0.2) 100%, rgba(255,255,250,1) 7%, rgba(244,244,253,1) 45%, rgba(81,81,229,0) 100%);
     border-radius: 24px;
     overflow: hidden;
-    padding-inline: 20px;
+    padding-inline: 24px;
     padding-block: 24px;
     align-self: stretch;
     z-index:0;
@@ -40,9 +40,10 @@
 
 
 .card-section h1 span{
-    font: var(--headline5);
-    font-weight: lighter;
+    font: var(--body3);
+    font-weight: 700;
     display: block;
+
 }
 
 .card-section h1 a {
@@ -67,5 +68,14 @@
         max-inline-size: 972px;
         padding-inline: 80px;
         padding-block:80px;
+    }
+    .card-section h1 span{
+        font: var(--body3);
+        font-size: 34px;
+        line-height: 55px;
+    }
+
+    .card-section h1 a {
+        font:var(--headline5);
     }
 }
