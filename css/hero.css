@@ -13,6 +13,11 @@
     text-align: center;
 }
 
+.hero-image img{
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
 .hero-social{
     padding-block-end: 24px;
 }
@@ -48,12 +53,13 @@
     }
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
     .hero-image img{
-        inline-size: 465px;
-        block-size: 390px;
+        inline-size: 516px;
+        block-size: auto;
     }
 }
+
 
 @media screen and (min-width: 1024px){
     .hero-image img{

@@ -1,0 +1,56 @@
+.testimony {
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+}
+
+.testimony-title{
+    background: var(--purple);
+    color: var(--white);
+    font: var(--headline5);
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    /*indica la alineación de un elemento dentro del bloque que lo contiene.
+    en este caso se agrupan los elementos desde el inicio*/
+    align-self: flex-start;
+    box-shadow: -4px 4px 0 var(--white);
+    text-decoration: none;
+} 
+
+.testimony-image img{
+    /*Esto se hace para la imagen tome el 100% del elemento, resize*/
+    max-inline-size: 100%;
+}
+
+
+.testimony-description{
+    display: flex;
+    /*flex-direction por defecto es row, en este caso necesitamos 
+    que los items se despliguen sobre una columna*/
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/*Responsive testimony*/
+
+@media screen and (min-width:768px) {
+    .testimony{
+        display: flex;
+        align-items: center;
+    }
+
+    .testimony-description{
+        flex: 1;
+    }
+
+
+    .testimony:nth-of-type(odd) .testimony-image{
+        /*Para que la imagen contenidas en los testimony pares estén a la derecha*/
+        order: 2;
+        /*para que este elemento ocupe la mitad*/
+        flex: 1;
+        text-align: center;
+    }
+}
