@@ -1,20 +1,17 @@
 .card{
-   padding-inline: 10px;
-   padding-block-start: 40px;
-   padding-block-end: 80px;
-   display: flex;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
 }
+
 
 .card-section{
     position: relative;
-    display:inline-block;
     background-image: linear-gradient(to right, rgba(255,255,255,0.2) 100%, rgba(255,255,250,1) 7%, rgba(244,244,253,1) 45%, rgba(81,81,229,0) 100%);
     border-radius: 24px;
-    overflow: hidden;
-    padding-inline: 24px;
-    padding-block: 24px;
-    align-self: stretch;
-    z-index:0;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
 }
 
 .card-section:before{
@@ -39,14 +36,14 @@
 }
 
 
-.card-section h1 span{
+.card-section h1 p:nth-of-type(1){
     font: var(--body3);
     font-weight: 700;
     display: block;
 
 }
 
-.card-section h1 a {
+.card-section h1 p:nth-of-type(2){
     padding-block-start: 24px;
     opacity: 0.5;
     display: block;
@@ -58,24 +55,22 @@
 /*Responsive deisgn de card comentarios*/
 
 @media screen and (min-width: 768px){
-    .card{
-        padding-block: 58px;
-        padding-inline: 58px;
-    }
 
     .card-section{
         text-align: center;
         max-inline-size: 972px;
-        padding-inline: 80px;
-        padding-block:80px;
+        padding-inline-start: 80px;
+        padding-inline-end: 80px;
+        padding-block-start:80px;
+        padding-block-end:80px;
+        max-inline-size: 100%;
     }
-    .card-section h1 span{
-        font: var(--body3);
-        font-size: 34px;
-        line-height: 55px;
+    .card-section h1 p:nth-of-type(1){
+        font: var(--body4);
+        font-weight: 700;
     }
 
-    .card-section h1 a {
+    .card-section h1 p:nth-of-type(2){
         font:var(--headline5);
     }
 }
