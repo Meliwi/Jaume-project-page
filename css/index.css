@@ -7,6 +7,8 @@
 @import "./testimony.css";
 @import "./comment.css";
 @import "./card.css";
+@import "./social.css";
+@import "./footer.css";
 
 /*Aquí lo que hacemos es definir las variables de nuestros estilos principales
 del proyecto, definimos entonces las fuentes que se usarán, con sus distintas
@@ -36,6 +38,7 @@ body{
     min-block-size: 100vh;
     font: var(--body1); 
     color: var(--purple);
+    margin: 0;
 }
 
 
