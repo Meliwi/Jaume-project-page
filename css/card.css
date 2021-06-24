@@ -6,6 +6,7 @@
 
 .card-section{
     position: relative;
+    z-index: -1;
     background-image: linear-gradient(to right, rgba(255,255,255,0.2) 100%, rgba(255,255,250,1) 7%, rgba(244,244,253,1) 45%, rgba(81,81,229,0) 100%);
     border-radius: 24px;
     padding-inline-start: 24px;

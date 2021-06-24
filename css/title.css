@@ -1,0 +1,14 @@
+.title{
+    background: var(--purple);
+    color: var(--white);
+    font: var(--headline5);
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    /*indica la alineación de un elemento dentro del bloque que lo contiene.
+    en este caso se agrupan los elementos desde el inicio*/
+    align-self: flex-start;
+    box-shadow: -4px 4px 0 var(--white);
+    text-decoration: none;
+} 

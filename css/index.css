@@ -8,6 +8,8 @@
 @import "./comment.css";
 @import "./card.css";
 @import "./social.css";
+@import "./title.css";
+@import "./form.css";
 @import "./footer.css";
 
 /*Aquí lo que hacemos es definir las variables de nuestros estilos principales
@@ -28,7 +30,7 @@ propiedades y los colores de nuestros elementos */
     --body4: 34px/55px var(--fontTestimony);
     --button: bold 14px/22px var(--fontBase);
     --caption: 12px/19px var(--fontBase);
-    --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+    --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%),linear-gradient(90deg, rgba(143,182,241,1) 25%, rgba(77,123,175,1) 100%);
     --purple: #310A90;
     --green: #42E2B8;
     --white: white; 
