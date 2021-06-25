@@ -11,15 +11,20 @@
 }
 .hero-image{
     text-align: center;
+    overflow: hidden;
+    transition: all 500ms ease;
 }
 
 .hero-image img{
     max-inline-size: 100%;
     block-size: auto;
+    transition: all 500ms ease;
 }
 
-
-
+.hero-image:hover img{
+    transform:scale(1.1);
+    
+}
 
 .hero h1{
     font: var(--headline3);
@@ -60,9 +65,3 @@
 }
 
 
-@media screen and (min-width: 1024px){
-    .hero-image img{
-        inline-size: 516px;
-        block-size: 452px;
-    }
-}

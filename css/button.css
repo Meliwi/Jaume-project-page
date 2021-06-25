@@ -11,6 +11,21 @@
     border: none; 
     text-decoration: none;
     text-align: center;
+    /*----------------------*/
+    transition-duration: 0.4s;
+
+}
+
+
+
+.button:hover{
+   background-color: #1d0b49;
+}
+
+.button.is-secondary:hover{
+    background-color: #1d0b49;
+    cursor: pointer;
+    color: var(--white);
 }
 
 .button.is-secondary{

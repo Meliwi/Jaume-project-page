@@ -36,6 +36,11 @@ propiedades y los colores de nuestros elementos */
     --white: white; 
 }
 
+/*Esto se hace para manejar el comportamiento al hacer click en nuestra lista*/
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--gradient);
     min-block-size: 100vh;
