@@ -40,6 +40,10 @@
     margin-block-start: 8px;
 }
 
+.form-mail{
+    opacity: 0;
+}
+
 /*Parte responsive del formulario*/
 
 @media screen and (min-width:768px) {

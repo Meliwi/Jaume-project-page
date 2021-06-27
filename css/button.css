@@ -1,4 +1,4 @@
-.button{
+.button, .button-alert{
     background: var(--purple);
     color:var(--white);
     font: var(--button);
@@ -16,11 +16,15 @@
 
 }
 
-
-
 .button:hover{
    background-color: #1d0b49;
 }
+
+.button-alert:not([disabled]):hover{
+    background-color: #1d0b49;
+}
+
+
 
 .button.is-secondary:hover{
     background-color: #1d0b49;

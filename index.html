@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <!--Con esto importamos la librería sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <Link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -49,11 +51,11 @@
                 </p>
                 <div class="social">
                     <a class="button-icon" href="tel:2156213"><img src="./icons/icon-phone.svg"></a>
-                    <a class="button-icon" ><img src="./icons/icon-mail.svg"></a>
-                    <a class="button-icon" ><img src="./icons/icon-instagram.svg"></a>
-                    <a class="button-icon" ><img src="./icons/icon-twitter_squared.svg"></a>
+                    <a class="button-icon" href="mailto:jaumeGibbons@correo.com" ><img src="./icons/icon-mail.svg"></a>
+                    <a class="button-icon" target="_blank"  href="https://www.instagram.com/" ><img src="./icons/icon-instagram.svg"></a>
+                    <a class="button-icon" target="_blank" href="https://www.twitter.com/"><img src="./icons/icon-twitter_squared.svg"></a>
                 </div>
-                <a href="das" class="button">Descargar curriculum</a>
+                <a href="./curriculum/CVJaume.pdf" download="CVJaume.pdf" class="button">Descargar curriculum</a>
             </div>
         </section>
         <section class="comment" id="comment">
@@ -90,12 +92,12 @@
         </section>
         <div class="testimony">
             <div class="testimony-image">
-                <img src="./images/marvol.png" />
+                <img src="./images/marvol.png" alt="marvol" />
             </div>
             <div class="testimony-description">
                 <a class="title" target="_blank" href="#">marvol</a>
                 <p>Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.</p>
-                <a target="_blank" href="#" class="button is-secondary"> ver código</a>
+                <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
                 <a target="_blank" href="#" class="button ">ver proyecto</a>
             </div>
         </div>
@@ -129,7 +131,7 @@
                 </h1>
             </div>
         </section>
-        <form id="contact" action="" method="GET" class="form">
+        <form id="contact" action="https://formspree.io/f/xgerzayr" method="POST" class="form">
             <div class="form-content">
                 <h2 class="title">Hablemos</h2>
                 <p>Si está interesado en trabajar conmigo en su próximo proyecto, 
@@ -148,6 +150,7 @@
                 <button class="button" type="submit">enviar mensaje</button>
             </div>
         </form>
+        <a href="mailto:melimusich@gmail.com" id="form-mail"></a>
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-logo">
@@ -155,9 +158,9 @@
                 </div>
                 <div class="social">
                     <a class="button-icon" href="tel:2156213"><img src="./icons/icon-phone.svg"></a>
-                    <a class="button-icon" ><img src="./icons/icon-mail.svg"></a>
-                    <a class="button-icon" ><img src="./icons/icon-instagram.svg"></a>
-                    <a class="button-icon" ><img src="./icons/icon-twitter_squared.svg"></a>
+                    <a class="button-icon" href="mailto:jaumeGibbons@correo.com" ><img src="./icons/icon-mail.svg"></a>
+                    <a class="button-icon" target="_blank"  href="https://www.instagram.com/" ><img src="./icons/icon-instagram.svg"></a>
+                    <a class="button-icon" target="_blank" href="https://www.twitter.com/"><img src="./icons/icon-twitter_squared.svg"></a>
                 </div>
                 <div class="footer-copyright">
                     <p>
@@ -167,7 +170,55 @@
                 </div>
             </div>
         </footer>
-    </div>
 
+        <!--Manejo del envío de información mediante Formspree-->
+        <script>
+            const $form = document.querySelector('#contact')
+
+            $form.addEventListener('submit', handleSubmit)
+
+            async function handleSubmit(event){
+                /*Para que la página no recargue al enviar la información*/
+                event.preventDefault()
+                const form= new FormData(this)
+                /*Lo que hacemos ahora es un fetch con javascript*/
+                const response = await fetch(this.action, {
+                    /*el método ya fue especificado en el formulario html*/
+                    method:this.method,
+                    body: form,
+                    headers:{
+                        'Accept': 'application/json'
+                    }
+                })
+                if(response.ok){
+                    this.reset()
+                    swal('Mensaje enviado', 'Gracias por contactarme, pronto te escribiré :)','success',{
+                        buttons: {
+                            confirm : {className:'button-alert'}
+                        }
+                    })
+                }
+            }
+        </script>
+        
+        <!--Manejo del envío de información del formulario mediante email-->
+        <!--<script>
+            const $form = document.querySelector('#contact')
+            const $buttonMailto = document.querySelector('#form-mail')
+
+            $form.addEventListener('submit', handleSubmit)
+            
+            function handleSubmit(event){
+                /*Para que la página no recargue cuando se oprima el botón de enviar mensaje*/
+                event.preventDefault()
+                const form = new FormData(this)
+                /*form.get('name') el atributo que entra a esta función es dado por el name de cada elemento dentro del label*/
+                $buttonMailto.setAttribute('href', `mailto:melimusich@gmail.com?subject=${form.get('name')} ${form.get('email')}&body=${form.get('message')}`)
+                $buttonMailto.click()
+            }
+        </script>-->
+
+    </div>
+    
 </body>
 </html>
