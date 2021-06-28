@@ -1,19 +1,17 @@
-.testimony {
+.project {
     padding-block-start: 40px;
     padding-block-end: 40px;
 
 }
 
-
-
-.testimony-image img{
+.project-image img{
     /*Esto se hace para la imagen tome el 100% del elemento, resize*/
     max-inline-size: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
-
-
-.testimony-description{
+.project-description, .buttons-container{
     display: flex;
     /*flex-direction por defecto es row, en este caso necesitamos 
     que los items se despliguen sobre una columna*/
@@ -25,29 +23,32 @@
 /*Responsive testimony*/
 
 @media screen and (min-width:768px) {
-    .testimony{
+    .project{
         display: flex;
         align-items: center;
+        gap: 32px;
     }
 
-    .testimony-description{
+    .project-description{
         flex: 1;
     }
 
-    .testimony-image img{
-        opacity:.6;
+    .project-image img{
+        opacity:.8;
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
     }
     
-    .testimony-image:hover img{
+    .project-image:hover img{
         opacity: 1;
         z-index: -1;
     }
-    
 
+    .buttons-container{
+        display: inline-block;
+    }    
 
-    .testimony:nth-of-type(odd) .testimony-image{
+    .project:nth-of-type(odd) .project-image{
         /*Para que la imagen contenidas en los testimony pares estén a la derecha*/
         order: 2;
         /*para que este elemento ocupe la mitad*/

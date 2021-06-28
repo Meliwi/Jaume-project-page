@@ -15,24 +15,28 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <img src="images/finalLogo.png" width="130" height="39" alt="Logo">  
+                <nav class="menu" aria-label="main-navigation">
+                    <ul>
+                        <li>
+                            <a class="is-active" href="#main">Hola</a>
+                        </li>
+                        <li>
+                            <a href="#project">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Hablemos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="button">Curriculum</button> 
+            </div>
+        </div>
+    </header>
     <div class="wrapper">
-        <header class="header">
-            <img src="images/finalLogo.png" width="130" height="39" alt="Logo">  
-            <nav class="menu" aria-label="main-navigation">
-                <ul>
-                    <li>
-                        <a class="is-active" href="#main">Hola</a>
-                    </li>
-                    <li>
-                        <a href="#project">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Hablemos</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="button">Curriculum</button> 
-        </header>
         <section aria-label="main" class="hero" id="main">
             <div class="hero-image">
                 <img  src="./images/user.png" width="298" height="265" alt="Jaume"/>
@@ -69,16 +73,18 @@
             </h1>
             <div><img src="./icons/icons-down.svg"></div>
         </section>
-        <div id="project" class="testimony">
-            <div class="testimony-image">
+        <div id="project" class="project">
+            <div class="project-image">
                 <img src="./images/leonidas-esteban.png" />
             </div>
-            <div class="testimony-description">
+            <div class="project-description">
                 <a class="title" target="_blank" href="https://leonidasesteban.com">leonidasesteban.com</a>
                 <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
                     tus habilidades como desarrollador Front-End.</p>
-                <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
-                <a target="_blank" href="https://leonidasesteban.com" class="button">ver proyecto</a>
+                <div class="buttons-container">
+                    <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
+                    <a target="_blank" href="https://leonidasesteban.com" class="button">ver proyecto</a>
+                </div>
             </div>
         </div>
         <section class="card">
@@ -90,15 +96,17 @@
                 </h1>
             </div>
         </section>
-        <div class="testimony">
-            <div class="testimony-image">
+        <div class="project">
+            <div class="project-image">
                 <img src="./images/marvol.png" alt="marvol" />
             </div>
-            <div class="testimony-description">
+            <div class="project-description">
                 <a class="title" target="_blank" href="#">marvol</a>
                 <p>Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.</p>
-                <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
-                <a target="_blank" href="#" class="button ">ver proyecto</a>
+                <div class="buttons-container">
+                    <a target="_blank"  href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary button-project"> ver código</a>
+                    <a target="_blank" href="#" class="button button-project">ver proyecto</a>
+                </div>
             </div>
         </div>
         <section class="card">
@@ -110,16 +118,18 @@
                 </h1>
             </div>
         </section>
-        <div class="testimony">
-            <div class="testimony-image">
+        <div class="project">
+            <div class="project-image">
                 <img src="./images/netnet.png" />
             </div>
-            <div class="testimony-description">
+            <div class="project-description">
                 <a class="title" target="_blank" href="#">netnet</a>
                 <p>Películas y series ilimitadas y mucho más.
                     Disfruta donde quieras. Cancela cuando quieras.</p>
-                <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
-                <a target="_blank" href="#" class="button">ver proyecto</a>
+                <div class="buttons-container">
+                    <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
+                    <a target="_blank" href="#" class="button">ver proyecto</a>
+                </div>
             </div>
         </div>
         <section class="card">
