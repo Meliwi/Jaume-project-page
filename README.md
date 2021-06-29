@@ -6,7 +6,7 @@ A example of portfolio, in this case Jaime's one, this was created using html, c
 Here is a working live demo: [jaume-project](https://jaume-project.netlify.app/)
 
 ## Site
-Currently is working with a .json for manage data 
+
 ![Imagen de sitio](/images/Finalportfolio.png)
 
 ## Download 
