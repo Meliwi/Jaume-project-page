@@ -7,7 +7,7 @@ Here is a working live demo: [jaume-project](https://jaume-project.netlify.app/)
 
 ## Site
 Currently is working with a .json for manage data 
-![Imagen de sitio]()
+![Imagen de sitio](/images/Finalportfolio.png)
 
 ## Download 
 
