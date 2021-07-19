@@ -18,17 +18,17 @@
     <header class="header">
         <div class="wrapper">
             <div class="header-content">
-                <img src="images/finalLogo.png" width="130" height="39" alt="Logo">  
+                <a href="#"><img src="images/finalLogo.png" width="130" height="39" alt="Logo"></a>
                 <nav class="menu" aria-label="main-navigation">
                     <ul>
-                        <li>
-                            <a class="is-active" href="#main">Hola</a>
+                        <li class="main">
+                            <a href="#main">Hola</a>
                         </li>
-                        <li>
-                            <a href="#project">Proyectos</a>
+                        <li class="projects">
+                            <a href="#projects">Proyectos</a>
                         </li>
-                        <li>
-                            <a href="#contact">Hablemos</a>
+                        <li class="forms">
+                            <a href="#forms">Hablemos</a>
                         </li>
                     </ul>
                 </nav>
@@ -63,7 +63,7 @@
                 <a href="./curriculum/CVJaume.pdf" download="CVJaume.pdf" class="button">Descargar curriculum</a>
             </div>
         </section>
-        <section class="comment" id="comment">
+        <section class="comment" id="main">
             <h1>
                 <span>
                     A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles
@@ -74,21 +74,23 @@
             </h1>
             <div><img src="./icons/icons-down.svg"></div>
         </section>
-        <div id="project" class="project">
-            <div class="project-image">
-                <img src="./images/leonidas-esteban.png" />
-            </div>
-            <div class="project-description">
-                <a class="title" target="_blank" href="https://leonidasesteban.com">leonidasesteban.com</a>
-                <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
-                    tus habilidades como desarrollador Front-End.</p>
-                <div class="buttons-container">
-                    <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
-                    <a target="_blank" href="https://leonidasesteban.com" class="button">ver proyecto</a>
+        <section aria-label="project" id="projects">
+            <div class="project">
+                <div class="project-image">
+                    <img src="./images/leonidas-esteban.png" />
+                </div>
+                <div class="project-description">
+                    <a class="title" target="_blank" href="https://leonidasesteban.com">leonidasesteban.com</a>
+                    <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+                        tus habilidades como desarrollador Front-End.</p>
+                    <div class="buttons-container">
+                        <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
+                        <a target="_blank" href="https://leonidasesteban.com" class="button">ver proyecto</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <section class="card">
+        </section>
+        <section class="card" aria-label="project" id="projects">
             <div class="card-section">
                 <img src="./images/Leonidas.png">
                 <h1>
@@ -97,20 +99,22 @@
                 </h1>
             </div>
         </section>
-        <div class="project">
-            <div class="project-image">
-                <img src="./images/marvol.png" alt="marvol" />
-            </div>
-            <div class="project-description">
-                <a class="title" target="_blank" href="#">marvol</a>
-                <p>Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.</p>
-                <div class="buttons-container">
-                    <a target="_blank"  href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary button-project"> ver código</a>
-                    <a target="_blank" href="#" class="button button-project">ver proyecto</a>
+        <section aria-label="project" id="projects">
+            <div class="project">
+                <div class="project-image">
+                    <img src="./images/marvol.png" alt="marvol" />
+                </div>
+                <div class="project-description">
+                    <a class="title" target="_blank" href="#">marvol</a>
+                    <p>Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.</p>
+                    <div class="buttons-container">
+                        <a target="_blank"  href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary button-project"> ver código</a>
+                        <a target="_blank" href="#" class="button button-project">ver proyecto</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <section class="card">
+        </section>
+        <section class="card" aria-label="project" id="projects">
             <div class="card-section">
                 <img src="./images/Jason.png">
                 <h1>
@@ -119,21 +123,23 @@
                 </h1>
             </div>
         </section>
-        <div class="project">
-            <div class="project-image">
-                <img src="./images/netnet.png" />
-            </div>
-            <div class="project-description">
-                <a class="title" target="_blank" href="#">netnet</a>
-                <p>Películas y series ilimitadas y mucho más.
-                    Disfruta donde quieras. Cancela cuando quieras.</p>
-                <div class="buttons-container">
-                    <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
-                    <a target="_blank" href="#" class="button">ver proyecto</a>
+        <section aria-label="project" id="projects">
+            <div class="project">
+                <div class="project-image">
+                    <img src="./images/netnet.png" />
+                </div>
+                <div class="project-description">
+                    <a class="title" target="_blank" href="#">netnet</a>
+                    <p>Películas y series ilimitadas y mucho más.
+                        Disfruta donde quieras. Cancela cuando quieras.</p>
+                    <div class="buttons-container">
+                        <a target="_blank" href="https://github.com/Meliwi/Jaume-project-page" class="button is-secondary"> ver código</a>
+                        <a target="_blank" href="#" class="button">ver proyecto</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <section class="card">
+        </section>
+        <section id="forms" aria-label="forms" class="card">
             <div class="card-section">
                 <img src="./images/Marco.png">
                 <h1>
@@ -142,48 +148,53 @@
                 </h1>
             </div>
         </section>
-        <form id="contact" action="https://formspree.io/f/xgerzayr" method="POST" class="form">
-            <div class="form-content">
-                <h2 class="title">Hablemos</h2>
-                <p>Si está interesado en trabajar conmigo en su próximo proyecto, 
-                    no dude en ponerse en contacto conmigo.</p>
-                <!--Si se enlaza el id del input con el for, al hacer click en nuestro label 
-                este hará énfasis en el input-->
-                <label for="form-name">Nombre Completo
-                    <input required name="name" id="form-name" type="text" placeholder="Juan">
-                </label>
-                <label for="form-email">Correo electrónico
-                    <input required name="email" id="form-email" type="email" placeholder="Juan@gmail.com">
-                </label>
-                <label for="form-message">Mensaje
-                    <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="7"></textarea>
-                </label>
-                <button class="button" type="submit">enviar mensaje</button>
-            </div>
-        </form>
+        <section id="forms" aria-label="forms">
+            <form id="contact" action="https://formspree.io/f/xgerzayr" method="POST" class="form">
+                <div class="form-content">
+                    <h2 class="title">Hablemos</h2>
+                    <p>Si está interesado en trabajar conmigo en su próximo proyecto, 
+                        no dude en ponerse en contacto conmigo.</p>
+                    <!--Si se enlaza el id del input con el for, al hacer click en nuestro label 
+                    este hará énfasis en el input-->
+                    <label for="form-name">Nombre Completo
+                        <input required name="name" id="form-name" type="text" placeholder="Juan">
+                    </label>
+                    <label for="form-email">Correo electrónico
+                        <input required name="email" id="form-email" type="email" placeholder="Juan@gmail.com">
+                    </label>
+                    <label for="form-message">Mensaje
+                        <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="7"></textarea>
+                    </label>
+                    <button class="button" type="submit">enviar mensaje</button>
+                </div>
+            </form>
+        </section>
         <a href="mailto:melimusich@gmail.com" id="form-mail"></a>
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/finalLogo.png" width="130" height="39" alt="Logo">  
+        <section id="footer-section">            
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="images/finalLogo.png" width="130" height="39" alt="Logo">  
+                    </div>
+                    <div class="social">
+                        <a class="button-icon" href="tel:2156213"><img src="./icons/icon-phone.svg"></a>
+                        <a class="button-icon" href="mailto:jaumeGibbons@correo.com" ><img src="./icons/icon-mail.svg"></a>
+                        <a class="button-icon" target="_blank"  href="https://www.instagram.com/" ><img src="./icons/icon-instagram.svg"></a>
+                        <a class="button-icon" target="_blank" href="https://www.twitter.com/"><img src="./icons/icon-twitter_squared.svg"></a>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>
+                            Hecho con el 🤍 por Melissa. 
+                        </p>
+                        <p>Copyright 2021 - Todos los derechos reservados.</p>
+                    </div>
                 </div>
-                <div class="social">
-                    <a class="button-icon" href="tel:2156213"><img src="./icons/icon-phone.svg"></a>
-                    <a class="button-icon" href="mailto:jaumeGibbons@correo.com" ><img src="./icons/icon-mail.svg"></a>
-                    <a class="button-icon" target="_blank"  href="https://www.instagram.com/" ><img src="./icons/icon-instagram.svg"></a>
-                    <a class="button-icon" target="_blank" href="https://www.twitter.com/"><img src="./icons/icon-twitter_squared.svg"></a>
-                </div>
-                <div class="footer-copyright">
-                    <p>
-                        Hecho con el 🤍 por Melissa. 
-                    </p>
-                    <p>Copyright 2021 - Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </section>
 
-        <!--Manejo del envío de información mediante Formspree-->
+        
         <script>
+            //Manejo del envío de información mediante Formspree-->
             const $form = document.querySelector('#contact')
 
             $form.addEventListener('submit', handleSubmit)
@@ -203,6 +214,7 @@
                 })
                 if(response.ok){
                     this.reset()
+                    //Alerta swal personalizada
                     swal('Mensaje enviado', 'Gracias por contactarme, pronto te escribiré :)','success',{
                         buttons: {
                             confirm : {className:'button-alert'}
@@ -210,6 +222,25 @@
                     })
                 }
             }
+            //Manejo de highligh nav menu 
+            const sections = document.querySelectorAll('section');
+            const navLi = document.querySelectorAll('nav ul li');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach (section => {
+                    const sectionTop = section.offsetTop; 
+                    const sectionHeight = section.clientHeight;
+                    if(pageYOffset >= sectionTop){
+                        current = section.getAttribute('id')
+                    }
+                })
+                navLi.forEach (li => {
+                    li.classList.remove('active');
+                    if(li.classList.contains(current)){
+                        li.classList.add('active')
+                    }
+                })
+            })
         </script>
         
         <!--Manejo del envío de información del formulario mediante email-->
@@ -228,6 +259,7 @@
                 $buttonMailto.click()
             }
         </script>-->
+        
 
     </div>
     

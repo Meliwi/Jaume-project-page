@@ -17,19 +17,19 @@
 }
 
 .button:hover{
-   background-color: #1d0b49;
+   background-color: var(--white);
+   color: var(--purple);
 }
 
 .button-alert:not([disabled]):hover{
     background-color: #1d0b49;
 }
 
-
-
 .button.is-secondary:hover{
-    background-color: #1d0b49;
+    background-color: var(--white);
     cursor: pointer;
-    color: var(--white);
+    color: var(--purple);
+    border: 2px solid var(--white);
 }
 
 .button.is-secondary{

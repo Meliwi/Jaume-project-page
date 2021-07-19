@@ -14,9 +14,10 @@
     text-transform: uppercase;
 }
 
-.menu ul a.is-active{
-    color: var(--purple);
+.menu ul li.active{
+    border-bottom:4px solid var(--purple);
 }
+
 
 /*Responsive design del menú*/
 
